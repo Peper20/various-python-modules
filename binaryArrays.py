@@ -1,10 +1,6 @@
-# import numpy as np
+from random import randint
 
 
-
-
-def generate_array(size):
-	pass
 
 
 def is_set_bit(number, index):
@@ -19,6 +15,20 @@ def reset_bit(number, index):
 def inverse_bit(number, index):
 	return number ^ (1 << index)
 
-# a = 6
-# print(bin(a))
-# print(bin(reset_bit(a, 1)))
+
+
+# bit_array = 2 ** (n - 1)
+
+size = 5
+max_value = 5
+min_value = 0
+
+for i in range(10):
+	bit_array = 0
+	array = [randint(min_value, max_value) for i in range(size)]
+	print(array, end=' ')
+
+	for value in array:
+		bit_array = set_bit(bit_array, value)
+	
+	print('->', bit_array.bit_count())
