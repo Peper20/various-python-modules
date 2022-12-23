@@ -9,3 +9,7 @@ def reset_bit(number, index):
 
 def inverse_bit(number, index):
 	return number ^ (1 << index)
+
+
+
+#123
