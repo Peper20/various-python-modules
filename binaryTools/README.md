@@ -1,6 +1,11 @@
 <h1>Модуль для работы с битами целых чисел</h1>
 <h2>Возможности модуля</h2>
-123
+`is_set_bit(number: int, index: int, /) -> int`, `is_reset_bit(number: int, index: int, /) -> int`:
+Проверяют принадлежность бита к 1 или 0 соответственно.
+`set_bit(number: int, index: int, /) -> int`, `reset_bit(number: int, index: int, /) -> int`:
+Устанавливают в бит 1 или 0 соответствуенно.
+`inverse_bit(number: int, index: int, /) -> int`:
+Инвертирует бит.
 <h2>Битовые операции в python</h2>
 <h3>Как получить двоичное представление типа данных int</h3>
 Для этого достаточно воспользоваться функцией bin:

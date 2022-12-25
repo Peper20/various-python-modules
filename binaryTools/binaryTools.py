@@ -7,21 +7,24 @@ __all__ = [
 
 # binary func tools beginning {
 
-def is_set_bit(number, index, /):
+  # returns true if the bit is 1
+def is_set_bit(number: int, index: int, /) -> int:
 	return (number & (1 << index)) == 1
-
-def is_reset_bit(number, index, /):
+  
+  # returns true if the bit is 0
+def is_reset_bit(number: int, index: int, /) -> int:
 	return (number & (1 << index)) == 0
 
-
-def set_bit(number, index, /):
+  # sets to the specified bit 1
+def set_bit(number: int, index: int, /) -> int:
 	return number | (1 << index)
 
-def reset_bit(number, index, /):
+  # sets to the specified bit 0
+def reset_bit(number: int, index: int, /) -> int:
 	return number & ~(1 << index)
 
-
-def inverse_bit(number, index, /):
+  # inverts the specified bit
+def inverse_bit(number: int, index: int, /) -> int:
 	return number ^ (1 << index)
 
 # } binary func tools end
